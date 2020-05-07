@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiciosService } from 'src/app/services/servicios.service';
+import { ServiciosService, Servicio } from 'src/app/services/servicios.service';
 
 @Component({
   selector: 'app-servicios',
@@ -7,7 +7,12 @@ import { ServiciosService } from 'src/app/services/servicios.service';
   styleUrls: ['./servicios.component.css'],
 })
 export class ServiciosComponent implements OnInit {
+  servicios: Servicio[] = [];
+
   constructor(private _serviciosService: ServiciosService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.servicios = this._serviciosService.getServicios();
+    console.log(this.servicios);
+  }
 }

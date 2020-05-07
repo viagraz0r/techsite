@@ -1,67 +1,11 @@
 <div class="container">
-  <div class="card mb-3">
-    <img
-      src="./assets/img/bg-soporteitempresas.png"
-      class="card-img-top"
-      alt="bg-soporteit"
-    />
+  <div class="card mb-3" *ngFor="let servicio of servicios">
+    <img [src]="servicio.img" class="card-img-top" alt="bg-soporteit" />
     <div class="card-body">
-      <h5 class="card-title">Soporte IT para Empresas</h5>
+      <h5 class="card-title">{{ servicio.nombre }}</h5>
       <p class="card-text">
-        Se proporciona asistencia técnica y asesoramiento a clientes que
-        dependen de equipos, aplicaciones informáticas y redes de
-        comunicaciones.
+        {{ servicio.descripcion }}
       </p>
-      <p class="card-text">
-        Nos acercamos al lugar donde se encuentra el equipo y solucionamos el
-        problema in situ. Tambien se brinda soporte informático remoto,
-        habitualmente con uso de un programa de control remoto y vía telefonica
-        desde nuestro centro de ayuda.
-      </p>
-    </div>
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title">Soporte Tecnico a domicilio en Hogares</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem, qui suscipit. Deleniti ipsum, odit aperiam sint labore
-          sit vitae totam nemo veritatis ullam cupiditate. Doloribus nam ullam
-          illum doloremque enim?
-        </p>
-      </div>
-      <img
-        src="./assets/img/soporte-tecnico-computadoras-tablets-laptops-domicilio.jpg"
-        class="card-img-top"
-        alt="..."
-      />
-    </div>
-  </div>
-  <div class="card mb-3">
-    <img src="./assets/img/cctv.jpg" class="card-img-top" alt="bg-soporteit" />
-    <div class="card-body">
-      <h5 class="card-title">Instalacion de Cámaras de Seguridad</h5>
-      <p class="card-text">
-        Contamos con personal altamente capacitado en la instalación de cámaras
-        de CCTV para hogares, oficina o industria. Si desea realizar una
-        instalación en su casa o comercio, lo invitamos a comunicarse con
-        nosotros para que podamos asesorarlo. Puede comunicarse con nuestro
-        personal por teléfono, email, formulario de contacto, o visitando
-        nuestras oficinas de atención.
-      </p>
-    </div>
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title">Instalacion de Redes Informaticas</h5>
-        <p class="card-text">
-          Si necesitas la instalar una red de ordenadores en su empresa o si
-          quiere compartir documentos, archivos, carpetas o impresoras entre los
-          equipos de la oficina, la solución es la instalacion de redes
-          informaticas. Ya sea una red con cable o una red inalámbrica, podemos
-          hacer el montaje del sistema para compartir la información de la
-          empresa entre los trabajadores en sus ordenadores.
-        </p>
-      </div>
-      <img src="./assets/img/redes.png" class="card-img-top" alt="..." />
     </div>
   </div>
 </div>
