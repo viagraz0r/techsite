@@ -11,6 +11,7 @@ import { FooterComponent } from "./components/shared/footer/footer.component";
 import { ServiciosComponent } from "./components/servicios/servicios.component";
 import { AboutComponent } from "./components/about/about.component";
 import { ProductsComponent } from './components/products/products.component';
+import { PartsComponent } from './components/parts/parts.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProductsComponent } from './components/products/products.component';
     ServiciosComponent,
     AboutComponent,
     ProductsComponent,
+    PartsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,11 +1,14 @@
 <div class="container">
-  <div class="card mt-3 mb-3" *ngFor="let producto of productos">
+  <div class="card my-3" *ngFor="let producto of productos">
     <img [src]="producto.img" class="card-img-top" alt="bg-soporteit" />
     <div class="card-body">
       <h5 class="card-title">{{ producto.nombre }}</h5>
       <p class="card-text">
         {{ producto.descripcion }}
       </p>
+      <a [routerLink]="['/parts']" class="btn btn-outline-dark btn-block"
+        >Ir a...</a
+      >
     </div>
   </div>
 </div>
